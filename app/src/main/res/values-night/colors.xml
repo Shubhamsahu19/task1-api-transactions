@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="etBgColor">#F8F8F8</color>
+
+    <color name="primaryDark">#FFF</color>
+    <color name="primaryLight">#000</color>
+    <color name="textColor">#000</color>
+</resources>
