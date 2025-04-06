@@ -43,6 +43,8 @@ class TransactionAdapter(private var originalList: List<Transaction>) :
         notifyDataSetChanged()
     }
 
+    fun getList() = filteredList
+
     fun updateList(newList: List<Transaction>) {
         originalList = newList
         filteredList = newList

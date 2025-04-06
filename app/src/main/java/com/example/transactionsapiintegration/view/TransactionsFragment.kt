@@ -66,7 +66,12 @@ class TransactionsFragment : Fragment(), OnClickListener {
 
             override fun onQueryTextChange(p0: String?): Boolean {
                 if(transactionAdapter!=null){
-                    transactionAdapter!!.filter(p0!!)
+                    transactionAdapter!!.filter(p0!!.trim())
+                    if(transactionAdapter!!.getList().isEmpty()){
+                        binding.tvNoTransactionsFound.visibility = View.VISIBLE
+                    }else{
+                        binding.tvNoTransactionsFound.visibility = View.GONE
+                    }
                 }
                 return true
             }
@@ -163,7 +168,6 @@ class TransactionsFragment : Fragment(), OnClickListener {
         when (p0!!.id) {
             R.id.ibLogout -> {
                 requireActivity().runOnUiThread {
-                    requireActivity().makeToast("Yes Clicked")
                     pref.saveString(Constants.TOKEN, "")
 
                     findNavController().navigate(

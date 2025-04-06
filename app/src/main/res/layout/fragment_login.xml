@@ -16,6 +16,7 @@
         android:text="Stripe Login Page"
         android:textColor="@color/primaryDark"
         android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
