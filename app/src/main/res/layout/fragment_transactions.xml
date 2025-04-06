@@ -63,6 +63,7 @@
         android:textColor="@color/textColor"
         android:textStyle="bold"
         android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
